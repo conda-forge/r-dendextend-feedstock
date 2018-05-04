@@ -1,4 +1,4 @@
-{% set version = '1.5.2' %}
+{% set version = "1.8.0" %}
 
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
@@ -12,7 +12,7 @@ source:
   url:
     - https://cran.r-project.org/src/contrib/dendextend_{{ version }}.tar.gz
     - https://cran.r-project.org/src/contrib/Archive/dendextend/dendextend_{{ version }}.tar.gz
-  sha256: 8228cf9cfd31ec30038aaa61a35959179bad748582d796999cd9ad78152a5f12
+  sha256: 30b72fbbb63555d65f8991c7347400f4df57a07c1342d00666bc8b21d8b039ee
 
 build:
   number: 0
