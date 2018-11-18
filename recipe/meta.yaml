@@ -14,9 +14,9 @@ source:
   sha256: 30b72fbbb63555d65f8991c7347400f4df57a07c1342d00666bc8b21d8b039ee
 
 build:
+  noarch: generic
   merge_build_host: True  # [win]
-  number: 1
-  skip: true  # [win32]
+  number: 1001
   rpaths:
     - lib/R/lib/
     - lib/
@@ -53,8 +53,7 @@ about:
     parameters - the color, size, type, etc of its branches, nodes and labels. (2) Visually
     and statistically compare different 'dendrograms' to one another.
   license_family: GPL3
-  license_file: '{{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-3'  # [unix]
-  license_file: '{{ environ["PREFIX"] }}\R\share\licenses\GPL-3'  # [win]
+  license_file: '{{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-3'
 
 extra:
   recipe-maintainers:
