@@ -1,4 +1,4 @@
-{% set version = "1.9.0" %}
+{% set version = "1.10.0" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -11,7 +11,7 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/dendextend_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/dendextend/dendextend_{{ version }}.tar.gz
-  sha256: cd95b1936e57334f019063e6965382169580a1f06a3bb5859f5239fe4db42aca
+  sha256: 88f0fb3362d69144daf4f35d0ea09f32c2df1adf614e040327a42552a8fd3224
 
 build:
   noarch: generic
