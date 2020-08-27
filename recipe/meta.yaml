@@ -1,4 +1,4 @@
-{% set version = "1.13.4" %}
+{% set version = "1.14.0" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,11 +10,11 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/dendextend_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/dendextend/dendextend_{{ version }}.tar.gz
-  sha256: c456b4f43075e8de0f29a6c997e1c0d4788487ab7b947a4b1bf05db2b4f94bde
+  sha256: 3789461bc474e146b077ad26566b1fa05be32fc7e57ab1fb5e78bdabcc797858
 
 build:
   merge_build_host: true  # [win]
-  number: 1
+  number: 0
   noarch: generic
   rpaths:
     - lib/R/lib/
@@ -42,9 +42,8 @@ test:
 about:
   home: https://github.com/talgalili/dendextend/, https://cran.r-project.org/package=dendextend, https://www.r-statistics.com/tag/dendextend/, https://academic.oup.com/bioinformatics/article/31/22/3718/240978/dendextend-an-R-package-for-visualizing-adjusting
   license: GPL-2 | GPL-3
-  summary: Offers a set of functions for extending 'dendrogram' objects in R, letting you visualize and compare trees of 'hierarchical clusterings'. You can (1) Adjust
-    a tree's graphical parameters - the color, size, type, etc of its branches, nodes and labels. (2) Visually and statistically compare different 'dendrograms' to
-    one another.
+  summary: Offers a set of functions for extending 'dendrogram' objects in R, letting you visualize and compare trees of 'hierarchical clusterings'. You can (1) Adjust a tree's graphical parameters - the color, size, type, etc of its branches, nodes and labels. (2) Visually and statistically compare different 'dendrograms'
+    to one another.
   license_family: GPL3
   license_file: {{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-3
 
