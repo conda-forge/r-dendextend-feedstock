@@ -1,4 +1,4 @@
-{% set version = "1.16.0" %}
+{% set version = "1.17.1" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,11 +10,11 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/dendextend_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/dendextend/dendextend_{{ version }}.tar.gz
-  sha256: ec2fd09c31a2a93292d87a9bd5bfc261840de941dfded79d6c2fe87116708466
+  sha256: 87e96e119e7236b4f5df1c6f1b0d4d4e12aab606a2142e039f56d8ec71f9e521
 
 build:
   merge_build_host: true  # [win]
-  number: 1
+  number: 0
   noarch: generic
   rpaths:
     - lib/R/lib/
