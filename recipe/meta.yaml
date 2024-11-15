@@ -1,4 +1,4 @@
-{% set version = "1.18.1" %}
+{% set version = "1.19.0" %}
 {% set posix = 'm2-' if win else '' %}
 
 package:
@@ -9,7 +9,7 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/dendextend_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/dendextend/dendextend_{{ version }}.tar.gz
-  sha256: 9d87a293a73e9399210cad62a4afc24ef4ce71e80bff05d5e74315428dd5a517
+  sha256: 58daa281a18b872b18ec81745e6aa82430bab3295c8a2f4ce3f17d8f9f98db9e
 
 build:
   number: 0
